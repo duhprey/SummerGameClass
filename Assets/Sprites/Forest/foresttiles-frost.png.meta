@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 43b6e950ed0d54808bf51fae0c4ef18c
-timeCreated: 1460092948
+timeCreated: 1460140360
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -70,7 +70,6 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -86,11 +85,12 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
+      - - {x: -9, y: 16}
+        - {x: -16, y: 9}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: 16}
-      tessellationDetail: 0
+        - {x: 16, y: 14}
+        - {x: 14, y: 16}
     - name: foresttiles-frost_1
       rect:
         serializedVersion: 2
@@ -102,11 +102,12 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
+      - - {x: -11, y: 16}
+        - {x: -16, y: 15}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: 16}
-      tessellationDetail: 0
+        - {x: 16, y: 15}
+        - {x: 12, y: 16}
     - name: foresttiles-frost_2
       rect:
         serializedVersion: 2
@@ -118,11 +119,13 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
+      - - {x: -6, y: 16}
+        - {x: -12, y: 15}
+        - {x: -16, y: 14}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: 16}
-      tessellationDetail: 0
+        - {x: 16, y: 9}
+        - {x: 10, y: 16}
     - name: foresttiles-frost_3
       rect:
         serializedVersion: 2
@@ -138,7 +141,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_4
       rect:
         serializedVersion: 2
@@ -154,7 +156,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_5
       rect:
         serializedVersion: 2
@@ -166,11 +167,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
+      - - {x: 6, y: 15}
+        - {x: -16, y: -3}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: 16}
-      tessellationDetail: 0
+        - {x: 16, y: 15}
     - name: foresttiles-frost_6
       rect:
         serializedVersion: 2
@@ -182,11 +183,11 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
+      - - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: 16}
-      tessellationDetail: 0
+        - {x: 16, y: -9}
+        - {x: 8, y: 15}
+        - {x: -16, y: 15}
     - name: foresttiles-frost_7
       rect:
         serializedVersion: 2
@@ -200,9 +201,10 @@ TextureImporter:
       outline:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: 16, y: -16}
+        - {x: -14, y: -16}
+        - {x: -2, y: -13}
+        - {x: 14, y: 7}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_8
       rect:
         serializedVersion: 2
@@ -218,7 +220,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_9
       rect:
         serializedVersion: 2
@@ -234,7 +235,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_10
       rect:
         serializedVersion: 2
@@ -250,7 +250,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_11
       rect:
         serializedVersion: 2
@@ -266,7 +265,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_12
       rect:
         serializedVersion: 2
@@ -282,7 +280,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_13
       rect:
         serializedVersion: 2
@@ -295,10 +292,11 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -16, y: 16}
-        - {x: -16, y: -16}
+        - {x: -16, y: 8}
+        - {x: -7, y: -2}
+        - {x: 14, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_14
       rect:
         serializedVersion: 2
@@ -312,9 +310,10 @@ TextureImporter:
       outline:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: 16, y: -16}
+        - {x: -14, y: -16}
+        - {x: -4, y: -13}
+        - {x: 16, y: 9}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_15
       rect:
         serializedVersion: 2
@@ -327,10 +326,12 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -16, y: 16}
-        - {x: -16, y: -16}
+        - {x: -16, y: 12}
+        - {x: -8, y: 0}
+        - {x: 10, y: -15}
+        - {x: 15, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_16
       rect:
         serializedVersion: 2
@@ -343,10 +344,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -16, y: 16}
-        - {x: -16, y: -16}
+        - {x: -16, y: -8}
+        - {x: -6, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_17
       rect:
         serializedVersion: 2
@@ -362,7 +363,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_18
       rect:
         serializedVersion: 2
@@ -376,9 +376,9 @@ TextureImporter:
       outline:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: 16, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -11}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_19
       rect:
         serializedVersion: 2
@@ -394,7 +394,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_20
       rect:
         serializedVersion: 2
@@ -410,7 +409,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_21
       rect:
         serializedVersion: 2
@@ -426,7 +424,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_22
       rect:
         serializedVersion: 2
@@ -442,7 +439,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     - name: foresttiles-frost_23
       rect:
         serializedVersion: 2
@@ -458,7 +454,6 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

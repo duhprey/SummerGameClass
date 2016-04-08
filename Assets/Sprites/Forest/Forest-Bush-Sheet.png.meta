@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: de4cc675192f59b4c9169e4d280c412b
+timeCreated: 1460140061
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Forest-Bush-Sheet_0
+    21300002: Forest-Bush-Sheet_1
+    21300004: Forest-Bush-Sheet_2
+    21300006: Forest-Bush-Sheet_3
+    21300008: Forest-Bush-Sheet_4
+    21300010: Forest-Bush-Sheet_5
+    21300012: Forest-Bush-Sheet_6
+    21300014: Forest-Bush-Sheet_7
+    21300016: Forest-Bush-Sheet_8
+    21300018: Forest-Bush-Sheet_9
+    21300020: Forest-Bush-Sheet_10
+    21300022: Forest-Bush-Sheet_11
+    21300024: Forest-Bush-Sheet_12
+    21300026: Forest-Bush-Sheet_13
+    21300028: Forest-Bush-Sheet_14
+    21300030: Forest-Bush-Sheet_15
+    21300032: Forest-Bush-Sheet_16
+    21300034: Forest-Bush-Sheet_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Forest-Bush-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.5, y: 39.5}
+        - {x: -53.5, y: -39.5}
+        - {x: 53.5, y: -39.5}
+        - {x: 53.5, y: 39.5}
+    - name: Forest-Bush-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    - name: Forest-Bush-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 0
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: 26.5}
+        - {x: 22.5, y: 32.5}
+        - {x: -17.5, y: 32.5}
+        - {x: -43.5, y: 20.5}
+        - {x: -53.5, y: 9.5}
+        - {x: -53.5, y: -28.5}
+        - {x: -31.5, y: -35.5}
+        - {x: 42.5, y: -35.5}
+        - {x: 48.5, y: -24.5}
+        - {x: 50.5, y: -12.5}
+        - {x: 50.5, y: 19.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

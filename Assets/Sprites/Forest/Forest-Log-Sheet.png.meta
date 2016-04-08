@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: 18ec0c2ed08e6cc48a545b4b5c128f81
+timeCreated: 1460140046
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Forest-Log-Sheet_0
+    21300002: Forest-Log-Sheet_1
+    21300004: Forest-Log-Sheet_2
+    21300006: Forest-Log-Sheet_3
+    21300008: Forest-Log-Sheet_4
+    21300010: Forest-Log-Sheet_5
+    21300012: Forest-Log-Sheet_6
+    21300014: Forest-Log-Sheet_7
+    21300016: Forest-Log-Sheet_8
+    21300018: Forest-Log-Sheet_9
+    21300020: Forest-Log-Sheet_10
+    21300022: Forest-Log-Sheet_11
+    21300024: Forest-Log-Sheet_12
+    21300026: Forest-Log-Sheet_13
+    21300028: Forest-Log-Sheet_14
+    21300030: Forest-Log-Sheet_15
+    21300032: Forest-Log-Sheet_16
+    21300034: Forest-Log-Sheet_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Forest-Log-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 15}
+        - {x: -53.5, y: 13}
+        - {x: -53.5, y: -12}
+        - {x: -52.5, y: -14}
+        - {x: 54.5, y: -14}
+        - {x: 54.5, y: 13}
+        - {x: 51.5, y: 15}
+    - name: Forest-Log-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.22222, y: 17}
+        - {x: -56.22222, y: -17}
+        - {x: 57.77778, y: -17}
+        - {x: 57.77778, y: 17}
+    - name: Forest-Log-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.944443, y: -17}
+        - {x: -52.944443, y: 17}
+        - {x: -55.944443, y: 17}
+        - {x: -55.944443, y: -17}
+      - - {x: -45.944443, y: 15}
+        - {x: -51.944443, y: 13}
+        - {x: -51.944443, y: -7}
+        - {x: -48.944443, y: -14}
+        - {x: 53.055557, y: -14}
+        - {x: 56.055557, y: -13}
+        - {x: 56.055557, y: 15}
+    - name: Forest-Log-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.833344, y: 14}
+        - {x: 40.833344, y: 15}
+        - {x: -47.166656, y: 15}
+        - {x: -52.166656, y: 11}
+        - {x: -52.166656, y: -9}
+        - {x: -51.166656, y: -13}
+        - {x: -49.166656, y: -14}
+        - {x: 25.833344, y: -14}
+        - {x: 54.833344, y: -10}
+        - {x: 54.833344, y: 0}
+        - {x: 53.833344, y: 4}
+    - name: Forest-Log-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.388885, y: 15}
+        - {x: -53.388885, y: 11}
+        - {x: -53.388885, y: -14}
+        - {x: 28.611115, y: -14}
+        - {x: 54.611115, y: -10}
+        - {x: 54.611115, y: 0}
+        - {x: 49.611115, y: 15}
+    - name: Forest-Log-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.111145, y: 15}
+        - {x: -52.111145, y: 11}
+        - {x: -52.111145, y: -14}
+        - {x: 49.888855, y: -14}
+        - {x: 55.888855, y: -12}
+        - {x: 55.888855, y: 3}
+        - {x: 50.888855, y: 15}
+    - name: Forest-Log-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.333313, y: 15}
+        - {x: -52.333313, y: -10}
+        - {x: -50.333313, y: -14}
+        - {x: 35.666687, y: -14}
+        - {x: 55.666687, y: -12}
+        - {x: 55.666687, y: 5}
+        - {x: 51.666687, y: 15}
+    - name: Forest-Log-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.055542, y: 15}
+        - {x: -52.055542, y: 13}
+        - {x: -52.055542, y: 0}
+        - {x: -50.055542, y: -12}
+        - {x: -49.055542, y: -14}
+        - {x: 55.944458, y: -14}
+        - {x: 55.944458, y: 15}
+    - name: Forest-Log-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.27777, y: 15}
+        - {x: -52.27777, y: 9}
+        - {x: -52.27777, y: -14}
+        - {x: 39.72223, y: -14}
+        - {x: 54.72223, y: -11}
+        - {x: 54.72223, y: 12}
+        - {x: 47.72223, y: 15}
+    - name: Forest-Log-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 15}
+        - {x: -53.5, y: 13}
+        - {x: -53.5, y: -12}
+        - {x: -52.5, y: -14}
+        - {x: 54.5, y: -14}
+        - {x: 54.5, y: 13}
+        - {x: 51.5, y: 15}
+    - name: Forest-Log-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.22229, y: 15}
+        - {x: -52.22229, y: 9}
+        - {x: -52.22229, y: -14}
+        - {x: 41.77771, y: -14}
+        - {x: 55.77771, y: -10}
+        - {x: 55.77771, y: 3}
+        - {x: 51.77771, y: 15}
+    - name: Forest-Log-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.944458, y: 15}
+        - {x: -51.944458, y: 13}
+        - {x: -51.944458, y: -7}
+        - {x: -48.944458, y: -14}
+        - {x: 53.055542, y: -14}
+        - {x: 56.055542, y: -13}
+        - {x: 56.055542, y: 15}
+    - name: Forest-Log-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.833374, y: 14}
+        - {x: 40.833374, y: 15}
+        - {x: -47.166626, y: 15}
+        - {x: -52.166626, y: 11}
+        - {x: -52.166626, y: -9}
+        - {x: -51.166626, y: -13}
+        - {x: -49.166626, y: -14}
+        - {x: 25.833374, y: -14}
+        - {x: 54.833374, y: -10}
+        - {x: 54.833374, y: 0}
+        - {x: 53.833374, y: 4}
+    - name: Forest-Log-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.388916, y: 15}
+        - {x: -53.388916, y: 11}
+        - {x: -53.388916, y: -14}
+        - {x: 28.611084, y: -14}
+        - {x: 54.611084, y: -10}
+        - {x: 54.611084, y: 0}
+        - {x: 49.611084, y: 15}
+    - name: Forest-Log-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.111084, y: 15}
+        - {x: -52.111084, y: 11}
+        - {x: -52.111084, y: -14}
+        - {x: 49.888916, y: -14}
+        - {x: 55.888916, y: -12}
+        - {x: 55.888916, y: 3}
+        - {x: 50.888916, y: 15}
+    - name: Forest-Log-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.333374, y: 15}
+        - {x: -52.333374, y: -10}
+        - {x: -50.333374, y: -14}
+        - {x: 35.666626, y: -14}
+        - {x: 55.666626, y: -12}
+        - {x: 55.666626, y: 5}
+        - {x: 51.666626, y: 15}
+    - name: Forest-Log-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.055542, y: 15}
+        - {x: -52.055542, y: 13}
+        - {x: -52.055542, y: 0}
+        - {x: -50.055542, y: -12}
+        - {x: -49.055542, y: -14}
+        - {x: 55.944458, y: -14}
+        - {x: 55.944458, y: 15}
+    - name: Forest-Log-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 0
+        width: 157
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.277832, y: 15}
+        - {x: -52.277832, y: 9}
+        - {x: -52.277832, y: -14}
+        - {x: 39.722168, y: -14}
+        - {x: 54.722168, y: -11}
+        - {x: 54.722168, y: 12}
+        - {x: 47.722168, y: 15}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

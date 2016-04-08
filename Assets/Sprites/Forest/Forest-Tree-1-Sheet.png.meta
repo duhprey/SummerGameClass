@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: bf57924f37d32e846a8bc168c25ee401
+timeCreated: 1460139986
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Forest-Tree-1-Sheet_0
+    21300002: Forest-Tree-1-Sheet_1
+    21300004: Forest-Tree-1-Sheet_2
+    21300006: Forest-Tree-1-Sheet_3
+    21300008: Forest-Tree-1-Sheet_4
+    21300010: Forest-Tree-1-Sheet_5
+    21300012: Forest-Tree-1-Sheet_6
+    21300014: Forest-Tree-1-Sheet_7
+    21300016: Forest-Tree-1-Sheet_8
+    21300018: Forest-Tree-1-Sheet_9
+    21300020: Forest-Tree-1-Sheet_10
+    21300022: Forest-Tree-1-Sheet_11
+    21300024: Forest-Tree-1-Sheet_12
+    21300026: Forest-Tree-1-Sheet_13
+    21300028: Forest-Tree-1-Sheet_14
+    21300030: Forest-Tree-1-Sheet_15
+    21300032: Forest-Tree-1-Sheet_16
+    21300034: Forest-Tree-1-Sheet_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Forest-Tree-1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 69}
+        - {x: -37.5, y: 69}
+        - {x: -55.5, y: 17}
+        - {x: -55.5, y: -44}
+        - {x: -38.5, y: -68}
+        - {x: -34.5, y: -69}
+        - {x: 19.5, y: -69}
+        - {x: 30.5, y: -67}
+        - {x: 55.5, y: -36}
+        - {x: 55.5, y: 34}
+        - {x: 51.5, y: 50}
+    - name: Forest-Tree-1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.72222, y: 69}
+        - {x: -55.72222, y: -69}
+        - {x: 57.27778, y: -69}
+        - {x: 57.27778, y: 69}
+    - name: Forest-Tree-1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.055557, y: -27}
+        - {x: 57.055557, y: -12}
+        - {x: 57.055557, y: 32}
+        - {x: 52.055557, y: 50}
+        - {x: 8.055557, y: 69}
+        - {x: -19.944443, y: 69}
+        - {x: -35.944443, y: 64}
+        - {x: -35.944443, y: 49}
+        - {x: -52.944443, y: 69}
+        - {x: -55.944443, y: 69}
+        - {x: -55.944443, y: -69}
+        - {x: 27.055557, y: -69}
+        - {x: 28.055557, y: -66}
+        - {x: 27.055557, y: -63}
+        - {x: 24.055557, y: -58}
+    - name: Forest-Tree-1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.166656, y: 69}
+        - {x: -55.166656, y: 32}
+        - {x: -55.166656, y: -30}
+        - {x: -39.166656, y: -69}
+        - {x: 51.833344, y: -69}
+        - {x: 56.833344, y: -48}
+        - {x: 56.833344, y: 69}
+    - name: Forest-Tree-1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.611115, y: -16}
+        - {x: 55.611115, y: 36}
+        - {x: 50.611115, y: 50}
+        - {x: 16.611115, y: 69}
+        - {x: -25.388885, y: 69}
+        - {x: -42.388885, y: 59}
+        - {x: -55.388885, y: 21}
+        - {x: -55.388885, y: -38}
+        - {x: -40.388885, y: -59}
+        - {x: -25.388885, y: -67}
+        - {x: -16.388885, y: -69}
+        - {x: 15.6111145, y: -69}
+        - {x: 28.611115, y: -66}
+        - {x: 25.611115, y: -60}
+        - {x: 49.611115, y: -32}
+    - name: Forest-Tree-1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.888916, y: 69}
+        - {x: -22.111084, y: 69}
+        - {x: -37.111084, y: 61}
+        - {x: -54.111084, y: 19}
+        - {x: -54.111084, y: -22}
+        - {x: -35.111084, y: -59}
+        - {x: -29.111084, y: -69}
+        - {x: 41.888916, y: -69}
+        - {x: 56.888916, y: -32}
+        - {x: 56.888916, y: 14}
+        - {x: 49.888916, y: 49}
+    - name: Forest-Tree-1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.833313, y: 69}
+        - {x: -36.833313, y: 64}
+        - {x: -54.833313, y: 6}
+        - {x: -54.833313, y: -32}
+        - {x: -42.833313, y: -63}
+        - {x: -35.833313, y: -69}
+        - {x: 38.166687, y: -69}
+        - {x: 57.166687, y: -45}
+        - {x: 57.166687, y: 46}
+        - {x: 27.166687, y: 69}
+    - name: Forest-Tree-1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.944458, y: -33}
+        - {x: 56.944458, y: -16}
+        - {x: 56.944458, y: 29}
+        - {x: 49.944458, y: 51}
+        - {x: 16.944458, y: 69}
+        - {x: -22.055542, y: 69}
+        - {x: -33.055542, y: 62}
+        - {x: -55.055542, y: 16}
+        - {x: -55.055542, y: -3}
+        - {x: -37.055542, y: -29}
+        - {x: -19.055542, y: -34}
+        - {x: -31.055542, y: -59}
+        - {x: -28.055542, y: -64}
+        - {x: -20.055542, y: -69}
+        - {x: 19.944458, y: -69}
+        - {x: 25.944458, y: -68}
+        - {x: 26.944458, y: -65}
+        - {x: 26.944458, y: -63}
+        - {x: 23.944458, y: -58}
+    - name: Forest-Tree-1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.277771, y: 69}
+        - {x: -55.27777, y: 38}
+        - {x: -55.27777, y: -26}
+        - {x: -29.277771, y: -69}
+        - {x: 30.722229, y: -69}
+        - {x: 55.72223, y: -33}
+        - {x: 55.72223, y: 69}
+    - name: Forest-Tree-1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 69}
+        - {x: -37.5, y: 69}
+        - {x: -55.5, y: 17}
+        - {x: -55.5, y: -44}
+        - {x: -38.5, y: -68}
+        - {x: -34.5, y: -69}
+        - {x: 19.5, y: -69}
+        - {x: 30.5, y: -67}
+        - {x: 55.5, y: -36}
+        - {x: 55.5, y: 34}
+        - {x: 51.5, y: 50}
+    - name: Forest-Tree-1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.722168, y: 69}
+        - {x: -27.722168, y: 69}
+        - {x: -53.722168, y: 26}
+        - {x: -53.722168, y: -31}
+        - {x: -28.722168, y: -69}
+        - {x: 38.277832, y: -69}
+        - {x: 57.277832, y: -35}
+        - {x: 57.277832, y: 36}
+        - {x: 54.277832, y: 52}
+    - name: Forest-Tree-1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.944458, y: 69}
+        - {x: -35.944458, y: 64}
+        - {x: -54.944458, y: 22}
+        - {x: -54.944458, y: -30}
+        - {x: -38.944458, y: -69}
+        - {x: 57.055542, y: -69}
+        - {x: 57.055542, y: 69}
+    - name: Forest-Tree-1-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.166626, y: 69}
+        - {x: -55.166626, y: 32}
+        - {x: -55.166626, y: -30}
+        - {x: -39.166626, y: -69}
+        - {x: 51.833374, y: -69}
+        - {x: 56.833374, y: -48}
+        - {x: 56.833374, y: 69}
+    - name: Forest-Tree-1-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.611084, y: -16}
+        - {x: 55.611084, y: 36}
+        - {x: 50.611084, y: 50}
+        - {x: 16.611084, y: 69}
+        - {x: -25.388916, y: 69}
+        - {x: -42.388916, y: 59}
+        - {x: -55.388916, y: 21}
+        - {x: -55.388916, y: -38}
+        - {x: -40.388916, y: -59}
+        - {x: -25.388916, y: -67}
+        - {x: -16.388916, y: -69}
+        - {x: 15.611084, y: -69}
+        - {x: 28.611084, y: -66}
+        - {x: 25.611084, y: -60}
+        - {x: 49.611084, y: -32}
+    - name: Forest-Tree-1-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.888916, y: 69}
+        - {x: -22.111084, y: 69}
+        - {x: -37.111084, y: 61}
+        - {x: -54.111084, y: 19}
+        - {x: -54.111084, y: -22}
+        - {x: -35.111084, y: -59}
+        - {x: -29.111084, y: -69}
+        - {x: 41.888916, y: -69}
+        - {x: 56.888916, y: -32}
+        - {x: 56.888916, y: 14}
+        - {x: 49.888916, y: 49}
+    - name: Forest-Tree-1-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.833252, y: 69}
+        - {x: -36.833252, y: 64}
+        - {x: -54.833252, y: 6}
+        - {x: -54.833252, y: -32}
+        - {x: -42.833252, y: -63}
+        - {x: -35.833252, y: -69}
+        - {x: 38.166748, y: -69}
+        - {x: 57.166748, y: -45}
+        - {x: 57.166748, y: 46}
+        - {x: 27.166748, y: 69}
+    - name: Forest-Tree-1-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.944458, y: -33}
+        - {x: 56.944458, y: -16}
+        - {x: 56.944458, y: 29}
+        - {x: 49.944458, y: 51}
+        - {x: 16.944458, y: 69}
+        - {x: -22.055542, y: 69}
+        - {x: -33.055542, y: 62}
+        - {x: -55.055542, y: 16}
+        - {x: -55.055542, y: -3}
+        - {x: -37.055542, y: -29}
+        - {x: -19.055542, y: -34}
+        - {x: -31.055542, y: -59}
+        - {x: -28.055542, y: -64}
+        - {x: -20.055542, y: -69}
+        - {x: 19.944458, y: -69}
+        - {x: 25.944458, y: -68}
+        - {x: 26.944458, y: -65}
+        - {x: 26.944458, y: -63}
+        - {x: 23.944458, y: -58}
+    - name: Forest-Tree-1-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 0
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.27771, y: 69}
+        - {x: -55.27771, y: 38}
+        - {x: -55.27771, y: -26}
+        - {x: -29.27771, y: -69}
+        - {x: 30.72229, y: -69}
+        - {x: 55.72229, y: -33}
+        - {x: 55.72229, y: 69}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

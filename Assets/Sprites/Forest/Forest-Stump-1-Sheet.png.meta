@@ -1,0 +1,447 @@
+fileFormatVersion: 2
+guid: 6706d0aa75637e4428e7e5f177ad6752
+timeCreated: 1460140003
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Forest-Stump-1-Sheet_0
+    21300002: Forest-Stump-1-Sheet_1
+    21300004: Forest-Stump-1-Sheet_2
+    21300006: Forest-Stump-1-Sheet_3
+    21300008: Forest-Stump-1-Sheet_4
+    21300010: Forest-Stump-1-Sheet_5
+    21300012: Forest-Stump-1-Sheet_6
+    21300014: Forest-Stump-1-Sheet_7
+    21300016: Forest-Stump-1-Sheet_8
+    21300018: Forest-Stump-1-Sheet_9
+    21300020: Forest-Stump-1-Sheet_10
+    21300022: Forest-Stump-1-Sheet_11
+    21300024: Forest-Stump-1-Sheet_12
+    21300026: Forest-Stump-1-Sheet_13
+    21300028: Forest-Stump-1-Sheet_14
+    21300030: Forest-Stump-1-Sheet_15
+    21300032: Forest-Stump-1-Sheet_16
+    21300034: Forest-Stump-1-Sheet_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Forest-Stump-1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 19}
+        - {x: -27, y: -19}
+        - {x: 27, y: -19}
+        - {x: 27, y: 19}
+    - name: Forest-Stump-1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    - name: Forest-Stump-1-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 15}
+        - {x: -16, y: 15}
+        - {x: -24, y: -3}
+        - {x: -26, y: -7}
+        - {x: -26, y: -12}
+        - {x: -13, y: -16}
+        - {x: 25, y: -16}
+        - {x: 27, y: -13}
+        - {x: 27, y: 6}
+        - {x: 24, y: 13}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
