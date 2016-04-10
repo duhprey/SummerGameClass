@@ -11,6 +11,8 @@ public class UseEquipment : MonoBehaviour {
 	public float timeBetweenHits = 1.0f;
 	private float nextHit = 0.0f;
 
+	public float damage = 10.0f;
+
 	private void Update () {
 		Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
@@ -20,7 +22,10 @@ public class UseEquipment : MonoBehaviour {
 		direction.y = Mathf.Clamp (direction.y, -range, range);
 		direction.z = 0;
 
-		RaycastHit2D hit = Physics2D.Raycast (transform.position, direction, 1.0f, targetLayers);
+		float mag = direction.magnitude;
+		direction /= mag;
+
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, direction, mag, targetLayers);
 		if (hit.collider != null) {
 			if (Input.GetMouseButton (0) && Time.time > nextHit) {
 				HitTarget (hit);
@@ -28,11 +33,16 @@ public class UseEquipment : MonoBehaviour {
 			}
 			aimObject.position = hit.point;
 		} else {
-			aimObject.position = transform.position + direction * range;
+			aimObject.position = transform.position + direction * mag;
 		}
 	}
 
 	private void HitTarget (RaycastHit2D hit) {
-		Instantiate (sparksPrefab, hit.point, Quaternion.identity);
+		Destroyable destroyable = hit.collider.GetComponent<Destroyable> ();
+		
+		if (destroyable != null) {
+			Instantiate (sparksPrefab, hit.point, Quaternion.identity);
+			destroyable.TakeDamage (damage);
+		}
 	}
 }
