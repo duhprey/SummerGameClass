@@ -67,7 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5f17d6cdf7d4f3e9fb676458759a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHitpoints: 100
+  maxHitpoints: 50
+  damaged1: {fileID: 21300020, guid: c72874de9930d4e779adcf1cc04c9d44, type: 3}
+  damaged2: {fileID: 21300020, guid: 4f0ddb4a633914774896207359fd79f3, type: 3}
+  damaged3: {fileID: 21300020, guid: 27f87629904e94dbfb33de04e6c1650b, type: 3}
 --- !u!212 &212000013729544330
 SpriteRenderer:
   m_ObjectHideFlags: 1
