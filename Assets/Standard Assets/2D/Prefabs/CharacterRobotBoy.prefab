@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 114000012199556368}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 114000014127961394}
   m_Layer: 0
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -106,7 +107,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -275,7 +276,30 @@ MonoBehaviour:
     m_Bits: 12288
   sparksPrefab: {fileID: 4000011656529716, guid: 9d25073e6d94d41d68837b5346f1e73a,
     type: 2}
-  timeBetweenHits: 1
+  timeBetweenHits: 0.5
+  damage: 10
+--- !u!114 &114000014127961394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd476ee28cc2419f958e17335314a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &212000012077735664
 SpriteRenderer:
   m_ObjectHideFlags: 1

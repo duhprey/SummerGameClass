@@ -71,6 +71,8 @@ MonoBehaviour:
   damaged1: {fileID: 21300004, guid: c72874de9930d4e779adcf1cc04c9d44, type: 3}
   damaged2: {fileID: 21300004, guid: 4f0ddb4a633914774896207359fd79f3, type: 3}
   damaged3: {fileID: 21300004, guid: 27f87629904e94dbfb33de04e6c1650b, type: 3}
+  collectablePrefabs:
+  - {fileID: 4000011534886046, guid: 924d346e0c743467b9b843224999d756, type: 2}
 --- !u!212 &212000011000192838
 SpriteRenderer:
   m_ObjectHideFlags: 1
