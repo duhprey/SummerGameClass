@@ -5,26 +5,75 @@ using System.Collections.Generic;
 
 public class InventoryManager : MonoBehaviour {
 
-	public Toggle[] inventorySlots;
-	public Image[] inventoryIcons;
-	public Text[] inventoryLabels;
+	public GameObject hud;
+	public Image[] hudIcons;
+	public Text[] hudLabels;
+
+	public GameObject inventoryWindow;
+	public GameObject backpack;
+	private Image[] backpackIcons;
+	private Text[] backpackLabels;
 
 	private int activeSlot;
 
 	class InventoryItem {
-		public int index;
+		public Transform itemPrefab;
 		public int count;
 	}
-	private Dictionary<Transform, InventoryItem> inventory;
+	private InventoryItem[] inventory;
+	private InventoryItem holding;
+
+	public Image holdingImage;
 
 	private void Start () {
-		inventory = new Dictionary<Transform, InventoryItem> ();
-		for (int i = 0; i < inventoryIcons.Length; i ++) {
-			inventoryIcons[i].color = Color.clear;
+		int backpackSize = backpack.transform.childCount;
+		inventory = new InventoryItem[backpackSize];
+		backpackIcons = new Image[backpackSize];
+		backpackLabels = new Text[backpackSize];
+		for (int i = 0; i < backpackSize; i ++) {
+			backpackLabels[i] = backpack.transform.GetChild(i).Find("Text ").GetComponent<Text>();
+			backpackLabels[i].text = "";
+			backpackIcons[i] = backpack.transform.GetChild(i).Find("Image").GetComponent<Image>();
+			backpackIcons[i].color = Color.clear;
 		}
 
-		for (int i = 0; i < inventoryLabels.Length; i ++) {
-			inventoryLabels[i].text = "";
+		for (int i = 0; i < hudIcons.Length; i ++) {
+			hudIcons[i].color = Color.clear;
+		}
+
+		for (int i = 0; i < hudLabels.Length; i ++) {
+			hudLabels[i].text = "";
+		}
+
+		hud.SetActive (true);
+		inventoryWindow.SetActive (false);
+
+		holding = null;
+		UpdateHolding ();
+	}
+
+	private void Update () {
+		if (Input.GetKeyDown (KeyCode.I)) {
+			if (!inventoryWindow.activeSelf) {
+				GetComponent<UseEquipment>().enabled = false;
+				hud.SetActive (false);
+				inventoryWindow.SetActive (true);
+			} else {
+				GetComponent<UseEquipment>().enabled = true;
+				hud.SetActive (true);
+				if (holding != null) {
+					int index = FirstEmptyIndex ();
+					inventory[index] = holding;
+					UpdateGUI (index);
+					holding = null;
+					UpdateHolding ();
+				}
+				inventoryWindow.SetActive (false);
+			}
+		}
+
+		if (inventoryWindow.activeSelf) {
+			holdingImage.transform.position = Input.mousePosition;
 		}
 	}
 
@@ -32,64 +81,79 @@ public class InventoryManager : MonoBehaviour {
 		Block block = collision.gameObject.GetComponent<Block> ();
 		if (block != null) {
 			Transform prefab = block.placeablePrefab;
-			if (inventory.ContainsKey (prefab) && inventory[prefab].count < 99) {
-				inventory[prefab].count ++;
-			} else {
+			int index = -1;
+			if ((index = IndexOf (prefab)) >= 0 && inventory[index].count < 99) {
+				inventory[index].count ++;
+			} else if ((index = FirstEmptyIndex ()) >= 0) {
 				InventoryItem item = new InventoryItem ();
+				item.itemPrefab = prefab;
 				item.count = 1;
-				item.index = FirstEmptyIndex ();
-				inventory.Add (prefab, item);
-				if (activeSlot == item.index) {
-					GetComponent<UseEquipment>().SetCurrentEquipment (prefab);
-				}
+				inventory[index] = item;
+				SetActiveSlot (activeSlot);
 			}
-			UpdateGUI (prefab);
-			Destroy (block.gameObject);
+			if (index >= 0) {
+				UpdateGUI (index);
+				Destroy (block.gameObject);
+			}
 		}
 	}
 
-	private int FirstEmptyIndex () {
-		for (int i = 0; i < inventoryIcons.Length; i ++) {
-			if (inventoryIcons[i].color == Color.clear) {
+	private int IndexOf (Transform prefab) {
+		for (int i = 0; i < inventory.Length; i ++) {
+			if (inventory[i] != null && inventory[i].itemPrefab == prefab) {
 				return i;
 			}
 		}
 		return -1;
 	}
 
-	private void UpdateGUI (Transform prefab) {
-		int index = inventory[prefab].index;
-		if (index >= 0)
-		{
-			inventoryIcons[index].sprite = prefab.GetComponent<SpriteRenderer>().sprite;
-			inventoryIcons[index].color = Color.white;
-			inventoryLabels[index].text = "" + inventory[prefab].count;
-		}
-	}
-
-	private Transform FindItem (int index) {
-		foreach (Transform item in inventory.Keys) {
-			if (inventory[item] != null && inventory[item].index == index) {
-				return item;
+	private int FirstEmptyIndex () {
+		for (int i = 0; i < inventory.Length; i ++) {
+			if (inventory[i] == null) {
+				return i;
 			}
 		}
-		return null;
+		return -1;
+	}
+
+	private void UpdateGUI (int index) {
+		Sprite sprite;
+		Color color;
+		string label;
+		if (inventory[index] != null) {
+			sprite = inventory[index].itemPrefab.GetComponent<SpriteRenderer>().sprite;
+			color = Color.white;
+			label = "" + inventory[index].count;
+		} else {
+			sprite = null;
+			color = Color.clear;
+			label = "";
+		}
+
+		backpackIcons[index].sprite = sprite;
+		backpackIcons[index].color = color;
+		backpackLabels[index].text = label;
+
+		if (index < hudIcons.Length) {
+			hudIcons[index].sprite = sprite;
+			hudIcons[index].color = color;
+		}
+		if (index < hudLabels.Length) {
+			hudLabels[index].text = label;
+		}
 	}
 
 	public void RemoveOne (Transform item) {
-		if (item != null && inventory.ContainsKey (item)) {
-			inventory[item].count --;
-			int count = inventory[item].count;
-			int index = inventory[item].index;
+		int index = -1;
+		if (item != null && (index = IndexOf (item)) >= 0) {
+			inventory[index].count --;
+			int count = inventory[index].count;
 			if (count > 0) {
-				inventoryLabels[index].text = "" + count;
+				hudLabels[index].text = "" + count;
 			} else {
-				if (index >= 0) {
-					inventoryIcons[index].color = Color.clear;
-					inventoryLabels[index].text = "";
-				}
-				inventory.Remove (item);
-				GetComponent<UseEquipment>().SetCurrentEquipment (null);
+				inventory[index] = null;
+				UpdateGUI (index);
+				SetActiveSlot (activeSlot);
 			}
 		}
 	}
@@ -102,7 +166,29 @@ public class InventoryManager : MonoBehaviour {
 
 	private void SetActiveSlot (int index) {
 		activeSlot = index;
-		Transform item = FindItem (index);
-		GetComponent<UseEquipment>().SetCurrentEquipment (item);
+		if (inventory[index] != null) {
+			GetComponent<UseEquipment>().SetCurrentEquipment (inventory[index].itemPrefab);
+		} else {
+			GetComponent<UseEquipment>().SetCurrentEquipment (null);
+		}
+	}
+
+	public void InventoryClicked (int index) {
+		InventoryItem nowHolding = inventory[index];
+		inventory[index] = holding;
+		UpdateGUI (index);
+		SetActiveSlot (activeSlot);
+		holding = nowHolding;
+		UpdateHolding ();
+	}
+
+	private void UpdateHolding () {
+		if (holding != null) {
+			holdingImage.sprite = holding.itemPrefab.GetComponent<SpriteRenderer>().sprite; 
+			holdingImage.color = Color.white;
+		} else {
+			holdingImage.sprite = null;
+			holdingImage.color = Color.clear;
+		}
 	}
 }
