@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012222941952}
   - 212: {fileID: 212000013011548948}
-  - 50: {fileID: 50000013485761508}
   - 61: {fileID: 61000014039753732}
   - 114: {fileID: 114000011705601684}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WoodWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,23 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50000013485761508
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014251055206}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &61000014039753732
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -89,8 +71,7 @@ MonoBehaviour:
   damaged1: {fileID: 21300004, guid: c72874de9930d4e779adcf1cc04c9d44, type: 3}
   damaged2: {fileID: 21300004, guid: 4f0ddb4a633914774896207359fd79f3, type: 3}
   damaged3: {fileID: 21300004, guid: 27f87629904e94dbfb33de04e6c1650b, type: 3}
-  collectablePrefab: {fileID: 4000012222941952, guid: a53502c4150a84a589173aa6f1bfca3d,
-    type: 2}
+  collectablePrefabs: []
 --- !u!212 &212000013011548948
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -103,7 +84,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}

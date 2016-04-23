@@ -6,6 +6,7 @@ public class UseEquipment : MonoBehaviour {
 	public Transform aimObject;
 	public float range = 1;
 	public LayerMask targetLayers;
+	public LayerMask groundLayer;
 	public Transform sparksPrefab;
 
 	public float timeBetweenHits = 1.0f;
@@ -35,12 +36,15 @@ public class UseEquipment : MonoBehaviour {
 				HitTarget (hit);
 				nextHit = Time.time + timeBetweenHits;
 			}
-			if (Input.GetMouseButtonDown (1) && hit.collider.gameObject.layer == LayerMask.NameToLayer ("Ground")) {
-				PlaceObject (hit);
-			}
 			aimObject.position = hit.point;
 		} else {
 			aimObject.position = transform.position + direction * mag;
+		}
+
+		if (Input.GetMouseButtonDown (1)) {
+			if (HasGroundNeighbor (aimObject.position)) {
+				PlaceObject (aimObject.position);
+			}
 		}
 	}
 
@@ -53,17 +57,30 @@ public class UseEquipment : MonoBehaviour {
 		}
 	}
 
-	private void PlaceObject (RaycastHit2D hit) {
-		Vector3 position = hit.collider.transform.position;
-		float dx = hit.point.x - position.x;
-		float dy = hit.point.y - position.y;
-		if (Mathf.Abs (dx) > Mathf.Abs (dy)) {
-			position += Mathf.Sign (dx) * gridSize.x * Vector3.right;
-		} else {
-			position += Mathf.Sign (dy) * gridSize.y * Vector3.up;
+	private bool HasGroundNeighbor (Vector3 position) {
+		RaycastHit2D hit;
+		hit = Physics2D.Raycast (position, Vector3.up, gridSize.y, groundLayer);
+		if (hit.collider != null) { return true; }
+		hit = Physics2D.Raycast (position, Vector3.down, gridSize.y, groundLayer);
+		if (hit.collider != null) { return true; }
+		hit = Physics2D.Raycast (position, Vector3.right, gridSize.x, groundLayer);
+		if (hit.collider != null) { return true; }
+		hit = Physics2D.Raycast (position, Vector3.left, gridSize.x, groundLayer);
+		if (hit.collider != null) { return true; }
+		return false;
+	}
+
+	private void PlaceObject (Vector3 position) {
+		if (currentItem != null) {
+			position.x -= gridOffset.x;
+			position.y -= gridOffset.y;
+			int i =	Mathf.RoundToInt (position.x / gridSize.x);
+			int j =	Mathf.RoundToInt (position.y / gridSize.y);
+			position.x = i * gridSize.x + gridOffset.x;
+			position.y = j * gridSize.y + gridOffset.y;
+			Instantiate (currentItem, position, Quaternion.identity);
+			GetComponent<InventoryManager>().RemoveOne (currentItem);
 		}
-		Instantiate (currentItem, position, Quaternion.identity);
-		// TODO remove one from the inventory
 	}
 
 	public void SetCurrentEquipment (Transform item) {

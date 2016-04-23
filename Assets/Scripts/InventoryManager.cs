@@ -9,7 +9,6 @@ public class InventoryManager : MonoBehaviour {
 	public Image[] inventoryIcons;
 	public Text[] inventoryLabels;
 
-	private int firstEmpty = 0;
 	private int activeSlot;
 
 	class InventoryItem {
@@ -38,20 +37,34 @@ public class InventoryManager : MonoBehaviour {
 			} else {
 				InventoryItem item = new InventoryItem ();
 				item.count = 1;
-				item.index = firstEmpty;
-				firstEmpty ++;
+				item.index = FirstEmptyIndex ();
 				inventory.Add (prefab, item);
+				if (activeSlot == item.index) {
+					GetComponent<UseEquipment>().SetCurrentEquipment (prefab);
+				}
 			}
 			UpdateGUI (prefab);
 			Destroy (block.gameObject);
 		}
 	}
 
+	private int FirstEmptyIndex () {
+		for (int i = 0; i < inventoryIcons.Length; i ++) {
+			if (inventoryIcons[i].color == Color.clear) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
 	private void UpdateGUI (Transform prefab) {
 		int index = inventory[prefab].index;
-		inventoryIcons[index].sprite = prefab.GetComponent<SpriteRenderer>().sprite;
-		inventoryIcons[index].color = Color.white;
-		inventoryLabels[index].text = "" + inventory[prefab].count;
+		if (index >= 0)
+		{
+			inventoryIcons[index].sprite = prefab.GetComponent<SpriteRenderer>().sprite;
+			inventoryIcons[index].color = Color.white;
+			inventoryLabels[index].text = "" + inventory[prefab].count;
+		}
 	}
 
 	private Transform FindItem (int index) {
@@ -61,6 +74,24 @@ public class InventoryManager : MonoBehaviour {
 			}
 		}
 		return null;
+	}
+
+	public void RemoveOne (Transform item) {
+		if (item != null && inventory.ContainsKey (item)) {
+			inventory[item].count --;
+			int count = inventory[item].count;
+			int index = inventory[item].index;
+			if (count > 0) {
+				inventoryLabels[index].text = "" + count;
+			} else {
+				if (index >= 0) {
+					inventoryIcons[index].color = Color.clear;
+					inventoryLabels[index].text = "";
+				}
+				inventory.Remove (item);
+				GetComponent<UseEquipment>().SetCurrentEquipment (null);
+			}
+		}
 	}
 
 	public void Slot1Active (bool on) { if (on) SetActiveSlot (0); }
