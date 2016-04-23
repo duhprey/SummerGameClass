@@ -47,7 +47,7 @@ TextureImporter:
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -64,6 +64,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -88,6 +89,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_1
       rect:
         serializedVersion: 2
@@ -103,6 +105,7 @@ TextureImporter:
         - {x: -17.5, y: -17}
         - {x: 17.5, y: -17}
         - {x: 17.5, y: 17}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_2
       rect:
         serializedVersion: 2
@@ -123,6 +126,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_3
       rect:
         serializedVersion: 2
@@ -143,6 +147,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_4
       rect:
         serializedVersion: 2
@@ -163,6 +168,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_5
       rect:
         serializedVersion: 2
@@ -183,6 +189,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_6
       rect:
         serializedVersion: 2
@@ -203,6 +210,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_7
       rect:
         serializedVersion: 2
@@ -223,6 +231,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_8
       rect:
         serializedVersion: 2
@@ -243,6 +252,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_9
       rect:
         serializedVersion: 2
@@ -263,6 +273,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_10
       rect:
         serializedVersion: 2
@@ -283,6 +294,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_11
       rect:
         serializedVersion: 2
@@ -303,6 +315,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_12
       rect:
         serializedVersion: 2
@@ -323,6 +336,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_13
       rect:
         serializedVersion: 2
@@ -343,6 +357,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_14
       rect:
         serializedVersion: 2
@@ -363,6 +378,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_15
       rect:
         serializedVersion: 2
@@ -383,6 +399,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_16
       rect:
         serializedVersion: 2
@@ -403,6 +420,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     - name: Forest-Mushroom-2-Sheet_17
       rect:
         serializedVersion: 2
@@ -423,6 +441,7 @@ TextureImporter:
         - {x: 15.5, y: -16}
         - {x: 17.5, y: -7}
         - {x: 17.5, y: 12}
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

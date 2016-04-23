@@ -53,7 +53,7 @@ TextureImporter:
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -70,6 +70,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -89,6 +90,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_1
       rect:
         serializedVersion: 2
@@ -104,6 +106,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_2
       rect:
         serializedVersion: 2
@@ -119,6 +122,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_3
       rect:
         serializedVersion: 2
@@ -134,6 +138,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_4
       rect:
         serializedVersion: 2
@@ -149,6 +154,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_5
       rect:
         serializedVersion: 2
@@ -164,6 +170,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_6
       rect:
         serializedVersion: 2
@@ -179,6 +186,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_7
       rect:
         serializedVersion: 2
@@ -194,6 +202,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_8
       rect:
         serializedVersion: 2
@@ -209,6 +218,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_9
       rect:
         serializedVersion: 2
@@ -224,6 +234,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_10
       rect:
         serializedVersion: 2
@@ -239,6 +250,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_11
       rect:
         serializedVersion: 2
@@ -254,6 +266,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_12
       rect:
         serializedVersion: 2
@@ -269,6 +282,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_13
       rect:
         serializedVersion: 2
@@ -284,6 +298,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_14
       rect:
         serializedVersion: 2
@@ -299,6 +314,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_15
       rect:
         serializedVersion: 2
@@ -314,6 +330,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_16
       rect:
         serializedVersion: 2
@@ -329,6 +346,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_17
       rect:
         serializedVersion: 2
@@ -344,6 +362,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_18
       rect:
         serializedVersion: 2
@@ -359,6 +378,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_19
       rect:
         serializedVersion: 2
@@ -374,6 +394,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_20
       rect:
         serializedVersion: 2
@@ -389,6 +410,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_21
       rect:
         serializedVersion: 2
@@ -404,6 +426,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_22
       rect:
         serializedVersion: 2
@@ -419,6 +442,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     - name: foresttiles-dark-back_23
       rect:
         serializedVersion: 2
@@ -434,6 +458,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

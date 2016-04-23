@@ -47,7 +47,7 @@ TextureImporter:
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -64,6 +64,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -96,6 +97,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_1
       rect:
         serializedVersion: 2
@@ -111,6 +113,7 @@ TextureImporter:
         - {x: -45, y: -85}
         - {x: 45, y: -85}
         - {x: 45, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_2
       rect:
         serializedVersion: 2
@@ -139,6 +142,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_3
       rect:
         serializedVersion: 2
@@ -167,6 +171,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_4
       rect:
         serializedVersion: 2
@@ -195,6 +200,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_5
       rect:
         serializedVersion: 2
@@ -223,6 +229,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_6
       rect:
         serializedVersion: 2
@@ -251,6 +258,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_7
       rect:
         serializedVersion: 2
@@ -279,6 +287,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_8
       rect:
         serializedVersion: 2
@@ -307,6 +316,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_9
       rect:
         serializedVersion: 2
@@ -335,6 +345,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_10
       rect:
         serializedVersion: 2
@@ -363,6 +374,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_11
       rect:
         serializedVersion: 2
@@ -391,6 +403,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_12
       rect:
         serializedVersion: 2
@@ -419,6 +432,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_13
       rect:
         serializedVersion: 2
@@ -447,6 +461,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_14
       rect:
         serializedVersion: 2
@@ -475,6 +490,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_15
       rect:
         serializedVersion: 2
@@ -503,6 +519,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_16
       rect:
         serializedVersion: 2
@@ -531,6 +548,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     - name: Forest-Tree-5-Sheet_17
       rect:
         serializedVersion: 2
@@ -559,6 +577,7 @@ TextureImporter:
         - {x: 45, y: -82}
         - {x: 45, y: -7}
         - {x: 21, y: 85}
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
