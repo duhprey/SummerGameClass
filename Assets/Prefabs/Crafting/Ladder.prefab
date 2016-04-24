@@ -22,8 +22,8 @@ GameObject:
   - 212: {fileID: 212000013011548948}
   - 61: {fileID: 61000014039753732}
   - 114: {fileID: 114000011705601684}
-  m_Layer: 12
-  m_Name: WoodWall
+  m_Layer: 15
+  m_Name: Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5f17d6cdf7d4f3e9fb676458759a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitpoints: 10
-  damaged1: {fileID: 21300000, guid: 0bb690d35965b437496f84b79d6e11a2, type: 3}
-  damaged2: {fileID: 21300000, guid: 0bb690d35965b437496f84b79d6e11a2, type: 3}
-  damaged3: {fileID: 21300000, guid: 0bb690d35965b437496f84b79d6e11a2, type: 3}
+  maxHitpoints: 1
+  damaged1: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
+  damaged2: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
+  damaged3: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
   collectablePrefabs:
   - {fileID: 4000012222941952, guid: a53502c4150a84a589173aa6f1bfca3d, type: 2}
 --- !u!212 &212000013011548948
@@ -100,7 +100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1783731295
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0bb690d35965b437496f84b79d6e11a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -6,7 +6,7 @@ public class UseEquipment : MonoBehaviour {
 	public Transform aimObject;
 	public float range = 1;
 	public LayerMask targetLayers;
-	public LayerMask groundLayer;
+	public LayerMask placeableLayers;
 	public Transform sparksPrefab;
 
 	public float timeBetweenHits = 1.0f;
@@ -59,13 +59,13 @@ public class UseEquipment : MonoBehaviour {
 
 	private bool HasGroundNeighbor (Vector3 position) {
 		RaycastHit2D hit;
-		hit = Physics2D.Raycast (position, Vector3.up, gridSize.y, groundLayer);
+		hit = Physics2D.Raycast (position, Vector3.up, gridSize.y, placeableLayers);
 		if (hit.collider != null) { return true; }
-		hit = Physics2D.Raycast (position, Vector3.down, gridSize.y, groundLayer);
+		hit = Physics2D.Raycast (position, Vector3.down, gridSize.y, placeableLayers);
 		if (hit.collider != null) { return true; }
-		hit = Physics2D.Raycast (position, Vector3.right, gridSize.x, groundLayer);
+		hit = Physics2D.Raycast (position, Vector3.right, gridSize.x, placeableLayers);
 		if (hit.collider != null) { return true; }
-		hit = Physics2D.Raycast (position, Vector3.left, gridSize.x, groundLayer);
+		hit = Physics2D.Raycast (position, Vector3.left, gridSize.x, placeableLayers);
 		if (hit.collider != null) { return true; }
 		return false;
 	}
