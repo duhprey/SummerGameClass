@@ -3,8 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class InventoryManager : MonoBehaviour {
-
+public class InventoryManager : MonoBehaviour 
+{
 	public GameObject hud;
 	public Image[] hudIcons;
 	public Text[] hudLabels;
@@ -19,11 +19,22 @@ public class InventoryManager : MonoBehaviour {
 	class InventoryItem {
 		public Transform itemPrefab;
 		public int count;
+		public int index;
 	}
 	private InventoryItem[] inventory;
 	private InventoryItem holding;
 
 	public Image holdingImage;
+
+	public Transform craftWindowParent;
+	public Transform craftSlotPrefab;
+	public CraftingDatabase database;
+	private class CraftSat {
+		public CraftingDatabase.Entry databaseEntry;
+		public InventoryItem[] reqsSatisfiedByItem;
+		public Transform craftWindowInstance;
+	}
+	private CraftSat[] sats;
 
 	private void Start () {
 		int backpackSize = backpack.transform.childCount;
@@ -50,6 +61,17 @@ public class InventoryManager : MonoBehaviour {
 
 		holding = null;
 		UpdateHolding ();
+
+		sats = new CraftSat[database.crafts.Length];
+		for (int i = 0; i < database.crafts.Length; i ++) {
+			sats[i] = new CraftSat ();
+			sats[i].databaseEntry = database.crafts[i];
+			sats[i].reqsSatisfiedByItem = new InventoryItem[database.crafts[i].requiredItems.Length];
+			for (int j = 0; j < sats[i].reqsSatisfiedByItem.Length; j ++) {
+				sats[i].reqsSatisfiedByItem[j] = null;
+			}
+			sats[i].craftWindowInstance = null;
+		}
 	}
 
 	private void Update () {
@@ -61,6 +83,7 @@ public class InventoryManager : MonoBehaviour {
 			} else {
 				GetComponent<UseEquipment>().enabled = true;
 				hud.SetActive (true);
+				// Return the item being held to the first available slot
 				if (holding != null) {
 					int index = FirstEmptyIndex ();
 					inventory[index] = holding;
@@ -81,21 +104,49 @@ public class InventoryManager : MonoBehaviour {
 		Block block = collision.gameObject.GetComponent<Block> ();
 		if (block != null) {
 			Transform prefab = block.placeablePrefab;
-			int index = -1;
-			if ((index = IndexOf (prefab)) >= 0 && inventory[index].count < 99) {
-				inventory[index].count ++;
-			} else if ((index = FirstEmptyIndex ()) >= 0) {
-				InventoryItem item = new InventoryItem ();
-				item.itemPrefab = prefab;
-				item.count = 1;
-				inventory[index] = item;
-				SetActiveSlot (activeSlot);
-			}
+			int index = AddItemToInventory (prefab);
 			if (index >= 0) {
-				UpdateGUI (index);
 				Destroy (block.gameObject);
 			}
 		}
+	}
+
+	private int AddItemToInventory (Transform prefab) {
+		int index = -1;
+		if ((index = IndexOf (prefab)) >= 0 && inventory[index].count < 99) {
+			inventory[index].count ++;
+			UpdateSats (inventory[index]);
+		} else if ((index = FirstEmptyIndex ()) >= 0) {
+			InventoryItem item = new InventoryItem ();
+			item.itemPrefab = prefab;
+			item.count = 1;
+			item.index = index;
+			inventory[index] = item;
+			SetActiveSlot (activeSlot);
+			UpdateSats (inventory[index]);
+		}
+		if (index >= 0) {
+			UpdateGUI (index);
+		}
+		return index;
+	}
+
+	public void RemoveItem (Transform item, int amount = 1) {
+		int index = -1;
+		if (item != null && (index = IndexOf (item)) >= 0) {
+			RemoveItem (index, amount);
+		}
+	}
+
+	public void RemoveItem (int index, int amount = 1) {
+		inventory[index].count -= amount;
+		UpdateSats (inventory[index]);
+		int count = inventory[index].count;
+		if (count <= 0) {
+			inventory[index] = null;
+			SetActiveSlot (activeSlot);
+		}
+		UpdateGUI (index);
 	}
 
 	private int IndexOf (Transform prefab) {
@@ -143,21 +194,6 @@ public class InventoryManager : MonoBehaviour {
 		}
 	}
 
-	public void RemoveOne (Transform item) {
-		int index = -1;
-		if (item != null && (index = IndexOf (item)) >= 0) {
-			inventory[index].count --;
-			int count = inventory[index].count;
-			if (count > 0) {
-				hudLabels[index].text = "" + count;
-			} else {
-				inventory[index] = null;
-				UpdateGUI (index);
-				SetActiveSlot (activeSlot);
-			}
-		}
-	}
-
 	public void Slot1Active (bool on) { if (on) SetActiveSlot (0); }
 	public void Slot2Active (bool on) { if (on) SetActiveSlot (1); }
 	public void Slot3Active (bool on) { if (on) SetActiveSlot (2); }
@@ -175,10 +211,14 @@ public class InventoryManager : MonoBehaviour {
 
 	public void InventoryClicked (int index) {
 		InventoryItem nowHolding = inventory[index];
+		if (holding != null) 
+			holding.index = index;
 		inventory[index] = holding;
 		UpdateGUI (index);
 		SetActiveSlot (activeSlot);
 		holding = nowHolding;
+		if (holding != null)
+			holding.index = -1;
 		UpdateHolding ();
 	}
 
@@ -189,6 +229,54 @@ public class InventoryManager : MonoBehaviour {
 		} else {
 			holdingImage.sprite = null;
 			holdingImage.color = Color.clear;
+		}
+	}
+
+	private void UpdateSats (InventoryItem updatedItem) {
+		foreach (CraftSat sat in sats) {
+			int reqIndex = -1;
+			for (int i = 0; i < sat.databaseEntry.requiredItems.Length; i ++) {
+				if (sat.databaseEntry.requiredItems[i] == updatedItem.itemPrefab) {
+					reqIndex = i;
+					break;
+				}
+			}
+			if (reqIndex >= 0) {
+				if (sat.reqsSatisfiedByItem[reqIndex] == null && updatedItem.count > 0) {
+					sat.reqsSatisfiedByItem[reqIndex] = updatedItem;
+					if (RequirementsSatisfied (sat)) {
+						sat.craftWindowInstance = Instantiate (craftSlotPrefab);
+						sat.craftWindowInstance.parent = craftWindowParent;
+						sat.craftWindowInstance.GetComponent<Image>().sprite = sat.databaseEntry.itemPrefab.GetComponent<SpriteRenderer>().sprite;
+        				sat.craftWindowInstance.GetComponent<Button>().onClick.AddListener(delegate { CraftItem(sat); });
+					}
+				} else if (sat.reqsSatisfiedByItem[reqIndex] == updatedItem && updatedItem.count <= 0) {
+					// TODO search through the inventory to find another that might satisfy
+					sat.reqsSatisfiedByItem[reqIndex] = null;
+					if (sat.craftWindowInstance != null) {
+						Destroy (sat.craftWindowInstance.gameObject);
+					}
+				}
+			}
+		}
+	}
+
+	private bool RequirementsSatisfied (CraftSat sat) {
+		bool ret = true;
+		for (int i = 0; i < sat.reqsSatisfiedByItem.Length; i ++) {
+			if (sat.reqsSatisfiedByItem[i] == null) {
+				ret = false;
+				break;
+			}
+		}
+		return ret;
+	}
+
+	private void CraftItem (CraftSat sat) {
+		Debug.Log ("Trying to add " + sat.databaseEntry.itemPrefab.gameObject.name + " to inventory");
+		AddItemToInventory (sat.databaseEntry.itemPrefab);
+		for (int i = 0; i < sat.databaseEntry.requiredItems.Length; i ++) {
+			RemoveItem (sat.reqsSatisfiedByItem[i].index, sat.databaseEntry.requiredCounts[i]);
 		}
 	}
 }

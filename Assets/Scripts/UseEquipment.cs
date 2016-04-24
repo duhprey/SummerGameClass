@@ -79,7 +79,7 @@ public class UseEquipment : MonoBehaviour {
 			position.x = i * gridSize.x + gridOffset.x;
 			position.y = j * gridSize.y + gridOffset.y;
 			Instantiate (currentItem, position, Quaternion.identity);
-			GetComponent<InventoryManager>().RemoveOne (currentItem);
+			GetComponent<InventoryManager>().RemoveItem (currentItem);
 		}
 	}
 

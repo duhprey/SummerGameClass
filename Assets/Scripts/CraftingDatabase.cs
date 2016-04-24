@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CraftingDatabase : MonoBehaviour {
-
+public class CraftingDatabase : MonoBehaviour 
+{
 	[System.Serializable]
 	public class Entry {
 		public Transform itemPrefab;
 		public int countProduced;
-		public Transform[] requiredItem;
-		public int requiredCount;
+		public string description;
+		public Transform[] requiredItems;
+		public int[] requiredCounts;
 	};
 	public Entry[] crafts;
 
+/* TODO teach singletons?
 	static private CraftingDatabase _instance = null;
 	static public CraftingDatabase instance {
 		get {
@@ -33,4 +35,5 @@ public class CraftingDatabase : MonoBehaviour {
 			_instance = this;
 		}
 	}
+*/
 }
