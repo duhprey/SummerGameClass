@@ -72,7 +72,7 @@ MonoBehaviour:
   damaged2: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
   damaged3: {fileID: 21300000, guid: e175542cd604c49acbab531517b73d73, type: 3}
   collectablePrefabs:
-  - {fileID: 4000012222941952, guid: a53502c4150a84a589173aa6f1bfca3d, type: 2}
+  - {fileID: 4000013234211654, guid: c2c4d28fb3e454ec486046498ea1f288, type: 2}
 --- !u!212 &212000013011548948
 SpriteRenderer:
   m_ObjectHideFlags: 1
