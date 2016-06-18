@@ -87,7 +87,9 @@ public class InventoryManager : MonoBehaviour
 		int index = -1;
 		if ((index = IndexOf (prefab)) >= 0 && inventory[index].count < 99) {
 			inventory[index].count ++;
-			crafting.UpdateSats (inventory[index]);
+			if (crafting != null) {
+				crafting.UpdateSats (inventory[index]);
+			}
 		} else if ((index = FirstEmptyIndex ()) >= 0) {
 			InventoryItem item = new InventoryItem ();
 			item.itemPrefab = prefab;
@@ -95,7 +97,9 @@ public class InventoryManager : MonoBehaviour
 			item.index = index;
 			inventory[index] = item;
 			SetActiveSlot (activeSlot);
-			crafting.UpdateSats (inventory[index]);
+			if (crafting != null) {
+				crafting.UpdateSats (inventory[index]);
+			}
 		}
 		if (index >= 0) {
 			UpdateGUI (index);
@@ -112,7 +116,9 @@ public class InventoryManager : MonoBehaviour
 
 	public void RemoveItem (int index, int amount = 1) {
 		inventory[index].count -= amount;
-		crafting.UpdateSats (inventory[index]);
+		if (crafting != null) {
+			crafting.UpdateSats (inventory[index]);
+		}
 		int count = inventory[index].count;
 		if (count <= 0) {
 			inventory[index] = null;
