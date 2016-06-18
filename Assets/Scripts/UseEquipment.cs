@@ -41,10 +41,8 @@ public class UseEquipment : MonoBehaviour {
 			aimObject.position = transform.position + direction * mag;
 		}
 
-		if (Input.GetMouseButtonDown (1)) {
-			if (HasGroundNeighbor (aimObject.position)) {
-				PlaceObject (aimObject.position);
-			}
+		if (Input.GetMouseButtonDown (1) && HasGroundNeighbor (aimObject.position)) {
+			PlaceObject (aimObject.position);
 		}
 	}
 
