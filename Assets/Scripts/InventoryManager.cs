@@ -83,17 +83,6 @@ public class InventoryManager : MonoBehaviour
 		}
 	}
 
-	public void OnCollisionEnter2D (Collision2D collision) {
-		Block block = collision.gameObject.GetComponent<Block> ();
-		if (block != null) {
-			Transform prefab = block.placeablePrefab;
-			int index = AddItemToInventory (prefab);
-			if (index >= 0) {
-				Destroy (block.gameObject);
-			}
-		}
-	}
-
 	public int AddItemToInventory (Transform prefab) {
 		int index = -1;
 		if ((index = IndexOf (prefab)) >= 0 && inventory[index].count < 99) {
